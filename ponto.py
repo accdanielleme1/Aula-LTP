@@ -21,9 +21,5 @@ class Ponto:
         return ((self.x-q.x)**2+(self.y-q.y)**2)**0.5
     
 ponto1=Ponto(4,4)
-
-p = Ponto(7,6)
-
-p.setX(5)
-
-print(p.getX())
+ponto2=Ponto(4,6)
+print(ponto1.distancia(ponto2))
