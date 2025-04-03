@@ -14,20 +14,16 @@ class ContaBancaria:
     
 
     ''' Exercicio, adicionar saque e deposito'''
+    def deposito(self,deposito):
+        self.saldo=self.saldo+deposito
+        return self.saldo
     
-    
-
-
-
-
-
-'''--------.----------.-------.---------.--------.------.--------------'''
-'''contas criadas'''
 
 conta1 = ContaBancaria("123.456.267-60") #primeira conta bancaria, dada por variavel, e add cpf e saldo na conta;
 
 ''' mostrando cpf e saldos'''
-
 print('cpf da conta: ', conta1.getCPF())
-print('saldo da conta: ', conta1.getSaldo() + conta1.setSaldo())
-
+print('saldo da conta: ', conta1.getSaldo())
+'''depositando'''
+depositar=int(input(f"digite o valor a ser depositado: "))
+print(conta1.deposito(depositar))
