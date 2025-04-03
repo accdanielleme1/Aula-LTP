@@ -18,7 +18,7 @@ class Ponto:
     def setY(self,y):
         self.y=y
     def distancia(self,q):
-        return ((self.x**2-q.x**2)+(self.y**2-q.y**2))**0.5
+        return ((self.x-q.x)**2+(self.y-q.y)**2)**0.5
     
 ponto1=Ponto(4,4)
 
